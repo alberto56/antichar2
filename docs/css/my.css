@@ -1,0 +1,16 @@
+.slideshow-container {
+  display: block;
+  position: relative;
+  height: 81px
+}
+.slideshow-part {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slideshow-part:first-child {
+  display: block;
+  width: 100%;
+}
