@@ -1,0 +1,56 @@
+<!-- admin/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+CMS.registerEditorComponent({
+  // Internal id of the component
+  id: "image-transform",
+  // Visible label
+  label: "Image (resized)",
+  // Fields the user need to fill out when adding an instance of the component
+  fields: [
+    {name: 'image', label: 'Image', widget: 'image', media_library: {
+                allow_multiple: false
+              }},
+    {name: 'alt', label: 'Alt Text', widget: 'string'},
+    {name: 'title', label: 'Title', widget: 'string'},
+    {name: 'size', label: 'Size', widget: 'select', options: [
+                { label: "Chicago", value: "ORD" },
+                { label: "LA", value: "LAX" },
+                { label: "Montreal", value: "YUL" }
+    ]}
+  ],
+  // Pattern to identify a block as being an instance of this component
+  pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
+  // Function to extract data elements from the regexp match
+  fromBlock: function(match) {
+    return {
+              image: match[2],
+              alt: match[1],
+              title: match[4]
+    };
+  },
+  // Function to create a text block from an instance of this component
+  toBlock: function(alt, image, title, size) {
+    return '*****' + size + '*******';
+  },
+  // Preview output for this component. Can either be a string or a React component
+  // (component gives better render performance)
+  toPreview: function(alt, image, title, size) {
+    return (
+       '*****' + size + '*******'
+    );
+  }
+});
+</script>
+
+  </body>
+</html>
