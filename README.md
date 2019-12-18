@@ -6,6 +6,7 @@ Photos
 Nous avons pris les photos suivantes du site [Unsplash](https://unsplash.com); toutes les photos ont une [license permissive](https://unsplash.com/license):
 
 * https://unsplash.com/photos/8osoVBQWWHc par https://unsplash.com/@jens_h
+* https://unsplash.com/photos/mHrc8ydLg3c par https://unsplash.com/@matthew_t_rader
 
 Design du site
 -----
@@ -21,3 +22,8 @@ Approche de développement
 -----
 
 Le SASS (.scss) n'est pas utilisé; le css est modifié directement.
+
+Ressources
+-----
+
+* https://twitter.com/BrentToderian/status/1205990849340817408

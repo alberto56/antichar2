@@ -1,0 +1,32 @@
+# config.yml
+
+backend:
+  # See https://www.netlifycms.org/docs/authentication-backends/#github-backend
+  name: github
+  repo: alberto56/antichar2
+  base_url: https://auth.static.dcycle.com
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog posts'
+    create: true
+    label: 'Blog'
+    folder: '_posts/'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Manifeste'
+        name: 'manifeste'
+        file: 'manifeste/index.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'About' }
+          - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/about/' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
