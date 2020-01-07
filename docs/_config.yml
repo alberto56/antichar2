@@ -1,0 +1,20 @@
+titre: Halte à la pub d'auto
+a_propos: Nous sommes un collectif basé à Montréal qui désire participer au débat public autour d'une politique de mobilité durable.
+sections:
+  - id: home
+    href: index.html
+    titre: Accueil
+  - id: apropos
+    href: apropos.html
+    titre: À propos
+  - id: blog
+    href: blogue.html
+    titre: Blogue
+  - id: contact
+    href: contact.html
+    titre: Contact
+# Notre site utilise https://formspree.io pour les formulaires.
+formspree_token: mqkereej
+# / veut dire que c'est sur un domaine directement et non dans un sous-
+# répertoire.
+base: /

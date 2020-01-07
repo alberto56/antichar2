@@ -1,0 +1,64 @@
+<footer class="ftco-footer ftco-section img">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">À propos de nous</h2>
+          <p>{{ site.a_propos }}</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Articles</h2>
+          {% for post in site.posts limit 2 %}
+          <div class="block-21 mb-4 d-flex">
+            <a class="blog-img mr-4" style="background-image: url({{ site.base }}images/{{ post.image }});"></a>
+            <div class="text">
+              <h3 class="heading"><a href="{{ post.url }}">{{ post.titre }}</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> {{ post.date | date: "%Y-%m-%d" }}</a></div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Distribué sous <a href="https://creativecommons.org/licenses/by/4.0/legalcode.fr">license CC BY 4.0</a> <script>document.write(new Date().getFullYear());</script> | Le code se trouve sur GitHub | Le template est conçu par <a href="https://colorlib.com" target="_blank">Colorlib et distributé sous CC BY 3.0</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="{{ site.base }}js/jquery.min.js"></script>
+<script src="{{ site.base }}js/jquery-migrate-3.0.1.min.js"></script>
+<script src="{{ site.base }}js/popper.min.js"></script>
+<script src="{{ site.base }}js/bootstrap.min.js"></script>
+<script src="{{ site.base }}js/jquery.easing.1.3.js"></script>
+<script src="{{ site.base }}js/jquery.waypoints.min.js"></script>
+<script src="{{ site.base }}js/jquery.stellar.min.js"></script>
+<script src="{{ site.base }}js/owl.carousel.min.js"></script>
+<script src="{{ site.base }}js/jquery.magnific-popup.min.js"></script>
+<script src="{{ site.base }}js/aos.js"></script>
+<script src="{{ site.base }}js/jquery.animateNumber.min.js"></script>
+<script src="{{ site.base }}js/bootstrap-datepicker.js"></script>
+<script src="{{ site.base }}js/jquery.timepicker.min.js"></script>
+<script src="{{ site.base }}js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="{{ site.base }}js/main.js"></script>
