@@ -10,6 +10,9 @@ sections:
   - id: blog
     href: blogue.html
     titre: Blogue
+  - id: ressources
+    href: ressources.html
+    titre: Ressources
   - id: contact
     href: contact.html
     titre: Contact
