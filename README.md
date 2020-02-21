@@ -1,5 +1,12 @@
 [![CircleCI](https://circleci.com/gh/alberto56/antichar2.svg?style=svg)](https://circleci.com/gh/alberto56/antichar2)
 
+Développement local 
+-----
+
+Installer Docker, télécharger ce code et taper:
+
+    ./scripts/deploy.sh
+
 Photos
 -----
 
