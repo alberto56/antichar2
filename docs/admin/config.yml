@@ -3,7 +3,7 @@ backend:
   repo: alberto56/antichar2
   base_url: https://suresh-issue-82.dcycleproject.org
   branch: master
-  auth_endpoint: /auth/github/repo/6946e3ff7c6e2b059bec66cd
+  auth_endpoint: /auth/github/repo/694f515d18f56cc35826654b
 media_folder: assets/uploads
 collections:
   - name: blog posts
